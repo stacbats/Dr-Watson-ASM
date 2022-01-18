@@ -10,7 +10,7 @@ BasicUpstart2(main)
 
 main:
     ldy #0
-    lda #90             // set up the diamond
+L1: lda #90             // set up the diamond
     sta 900             // STORE IT in 900
     lda #1              // Make them White
     sta 901             // STORE IT IN 901
@@ -18,7 +18,7 @@ main:
     sta 902             // STORE IT IN 902
     // ** the beging of the delay loop **
     ldx 250             // start of our timer delay
-L1: lda 900
+  lda 900
     sta 1024,y
     lda 901
     sta 55296,y
