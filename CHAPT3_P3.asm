@@ -1,6 +1,7 @@
 // Chapter 3  Addressing and Screen Outputting:
 // Working on using the X & Y registers to manipulate and Animate
 
+BasicUpstart2(main)
 
 
 
