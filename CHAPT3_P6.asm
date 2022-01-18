@@ -2,6 +2,8 @@
 // Working on using the X & Y registers to manipulate and Animate our diamond
 // as in the previous lesson however we wil add a loop to slow it down
 
+// NOTE In the book STAY and STAX refers to sta (address),y or , x
+
 BasicUpstart2(main)
 
 * = $828 "Start Address"   // Poke 2088

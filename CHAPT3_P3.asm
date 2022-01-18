@@ -1,6 +1,7 @@
 // Chapter 3  Addressing and Screen Outputting:
 // Working on using the X & Y registers to manipulate and Animate
 // the below will move a diamond across the screen
+// NOTE In the book STAY and STAX refers to sta (address),y or , x
 
 BasicUpstart2(main)
 
