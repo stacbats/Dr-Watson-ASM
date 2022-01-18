@@ -1,5 +1,6 @@
 // Chapter 3  Addressing and Screen Outputting:
 // Working on using the X & Y registers to manipulate and Animate
+// the below will move a diamond across the screen
 
 BasicUpstart2(main)
 
