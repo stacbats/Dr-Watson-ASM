@@ -20,15 +20,15 @@ S1: lda 900         // 4 bytes:
     sta 1024,y      // 3 bytes:
     lda 901         // 3 bytes:
     sta 55296,y     // 3 bytes:
-L2: sty 903         // 3 bytes:
+    sty 903         // 3 bytes:
 
-L3: ldy L1          // 3 bytes:LOOP 1 = OUTER LOOP 15  (loop forward)
-    ldx L2          // 3 bytes:LOOP 2 = INNER LOOP 250  (loop back)
+    ldy #15          // 3 bytes:LOOP 1 = OUTER LOOP 15  (loop forward)
+L2: ldx #250         // 3 bytes:LOOP 2 = INNER LOOP 250  (loop back)
 
-    dex             // 1 byte:
-    bne L3          // 2 bytes:LOOP 3 = Count down 250 (253)
+L1: dex             // 1 byte:
+    bne L1          // 2 bytes:LOOP 3 = Count down 250 (253)
     dey             // 1 bytes:
-L1: bne L2          // 2 bytes: LOOP 4: = Count down 15 (248)
+    bne L2          // 2 bytes: LOOP 4: = Count down 15 (248)
 
     ldy 903         // 3 bytes:
     lda 902         // 3 bytes:
