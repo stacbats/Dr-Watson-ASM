@@ -26,7 +26,7 @@ S1: lda 900         // 4 bytes:
 L2: ldx #250         // 3 bytes:LOOP 2 = INNER LOOP 250  (loop back)
 
 L1: dex             // 1 byte:
-    bne L1          // 2 bytes:LOOP 3 = Count down 250 (253)
+    bne L1          // 2 bytes:LOOP 3 = Count down 250 (253)SS
     dey             // 1 bytes:
     bne L2          // 2 bytes: LOOP 4: = Count down 15 (248)
 
