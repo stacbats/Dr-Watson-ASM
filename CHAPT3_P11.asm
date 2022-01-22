@@ -7,13 +7,13 @@ BasicUpstart2(main)
 * = $c000 "Start Address"   // 49152
 
 main:
-    ldy #0
+    ldy #0          // Load y with 0
     tya             // transfer y into A
-L1: iny
-    sta 1023,y
-    lda 0
-    sta 55295,y
-    cpy 100
-    bne L1
+L1: iny             // Increment the Y reg
+    sta 1023,y      // Store in address + Y
+    lda 0           // Load A wit 1
+    sta 55295,y     // store in address + Y
+    cpy 100         // compare Y 100 times (Change to test)
+    bne L1          // BRANCH if Z not set
 
     rts
