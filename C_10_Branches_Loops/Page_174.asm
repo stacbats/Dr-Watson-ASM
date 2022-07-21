@@ -21,7 +21,7 @@ LOOP:   txa         // Start of label and also transfer X reg to A
     sta 1774,x
 
     inx
-    cpx #250        // compare x ith 250 value
+    cpx #250        // compare x ith 250 value .This is the value for the test.
 
     bne LOOP
 
